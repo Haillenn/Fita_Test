@@ -1,62 +1,117 @@
-**Fita_Test**
-Fita_Test is a web-based multiple-choice testing application built with Laravel. This project provides a platform for users to create and participate in online quizzes with automatic grading and performance tracking.
+# Fita_Test
 
-🚀 Features
-User Authentication: Register, login, and role-based access control.
+**Fita_Test** is a web-based multiple-choice testing application built with Laravel. This project provides a platform for users to create and participate in online quizzes with automatic grading and performance tracking.
 
-Quiz Management: Admins can create and manage quizzes and questions.
+---
 
-Exam Participation: Users can take assigned quizzes easily.
+## 🚀 Features
 
-Automatic Grading: Instant scoring after quiz submission.
+- **User Authentication**: Register, login, and role-based access control.  
+- **Quiz Management**: Admins can create and manage quizzes and questions.  
+- **Exam Participation**: Users can take assigned quizzes easily.  
+- **Automatic Grading**: Instant scoring after quiz submission.  
+- **Results and Statistics**: View performance reports and exam analytics.
 
-Results and Statistics: View performance reports and exam analytics.
+---
 
-🛠️ Installation
-Requirements
-PHP >= 7.3
-Composer
-MySQL or MariaDB
-Node.js and npm
+## 🛠️ Installation
 
-Steps
-1. Clone the repository
+### Requirements
+
+- PHP >= 7.3  
+- Composer  
+- MySQL or MariaDB  
+- Node.js and npm
+
+### Steps
+
+#### 1. Clone the repository
+
+```bash
 git clone https://github.com/Haillenn/Fita_Test.git
 cd Fita_Test
+```
 
-2. Install PHP dependencies
+#### 2. Install PHP dependencies
+
+```bash
 composer install
+```
 
-3.Install JavaScript dependencies
+#### 3. Install JavaScript dependencies
+
+```bash
 npm install
 npm run dev
+```
 
-4.Environment Configuration
-Copy the .env.example file to .env:
+#### 4. Environment Configuration
+
+Copy the `.env.example` file to `.env`:
+
+```bash
 cp .env.example .env
+```
 
-5. Start the development server
+Update your `.env` file with database credentials and other configuration values as needed.
+
+#### 5. Generate application key
+
+```bash
+php artisan key:generate
+```
+
+#### 6. Run database migrations
+
+```bash
+php artisan migrate
+```
+
+#### 7. Start the development server
+
+```bash
 php artisan serve
+```
 
-📁 Project Structure
-app/: Application logic, including controllers and models.
+Then open your browser and go to:  
+[http://localhost:8000](http://localhost:8000)
 
-resources/views/: Blade template views.
+---
 
-routes/web.php: Defines application routes.
+## 📁 Project Structure
 
-public/: Public assets and the entry point for the web server.
+```
+app/               # Application logic, including controllers and models
+resources/views/   # Blade template views
+routes/web.php     # Defines application routes
+public/            # Public assets and entry point for the web server
+```
 
-🤝 Contributing
+---
+
+## 🤝 Contributing
+
 Contributions are welcome! To contribute:
 
-Fork this repository.
+1. Fork this repository.  
+2. Create a new branch:
 
-Create a new branch: git checkout -b feature/YourFeature
+```bash
+git checkout -b feature/YourFeature
+```
 
-Commit your changes: git commit -m 'Add new feature'
+3. Commit your changes:
 
-Push the branch: git push origin feature/YourFeature
+```bash
+git commit -m "Add new feature"
+```
 
-Open a Pull Request.
+4. Push the branch:
 
+```bash
+git push origin feature/YourFeature
+```
+
+5. Open a Pull Request.
+
+---
